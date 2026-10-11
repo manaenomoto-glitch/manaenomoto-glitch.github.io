@@ -1,1 +1,180 @@
+body{
+    background-color: #F9F4EE;
+    color: #4a3428; 
+
+}
+
+h1{
+    color: #4A3428;
+    display: flex;
+    justify-content: center;
+
+}
+
+a {
+    color: #4A3428;
+    text-decoration: none;
+    
+}
+
+p{
+    display: flex;
+    justify-content: center;
+
+}
+
+#start-quiz{
+    background-color: hsl(0, 45%, 43%);
+    color: #F9F4EE;
+    padding: 30px 70px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    
+}
+
+button{
+    background-color: #f9f4ee00;
+    border: none;
+    size: 30px;
+    
+}
+
+#food{
+    background-image: url("photo/sushi.jpeg");
+    height: 660px;
+    width: 360px;
+}
+#history{
+    background-image: url("photo/food.png");
+    height: 660px;
+    width: 360px;
+}
+
+#clothes{
+    background-image: url("photo/clothese.jpeg");
+    height: 660px;
+    width: 360px;
+}
+#photo{
+    padding-top: 40px;
+    gap: 20px;
+}
+section{
+    gap: 300px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main{
+    background-image: url("photo/back ground image.jpg");
+    background-size: cover; 
+    height: 720px;
+
+
+}
+
+header{
+    background-color: #F9F4EE;
+}
+
+nav{
+    background-color: #F9F4EE;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: auto;
+    padding: 15px;
+
+}
+
+
+.rectangle {
+  height: 640px;
+  width: 1100px;
+  background-color: #fffcf1;
+  border: 1.5px solid #c5af99;
+  border-radius: 30px;
+  margin: 70px auto;
+  text: center;
+
+}
+
+.options{
+    height: 80px;
+    width: 940px;
+    margin: 15px;
+    margin-left: 70px;
+    border-radius: 70px;
+    background-color: #fef8f1;
+    border: 1.5px solid #c5af99;
+
+}
+.options:hover {
+    background-color: #d6c0a9;
+
+}
+
+.options:first-of-type {
+    margin-top: 140px;
+
+}
+
+#next{
+    height: 70px;
+    width: 400px;
+    background-color: hsl(0, 45%, 43%);
+    border-radius: 70px;
+    display: block;
+    margin: 400px auto;
+    
+}
+
+#japanese-game {
+    background-image: url("photo/back\ ground2.jpg");
+    background-size:cover ;
+
+}
+
+#categories{
+    background-image: url("photo/_\ \(31\).jpeg");
+    background-size:cover ;
+}
+
+#categorybackground{
+    background-color: hsl(40, 100%, 99%);
+}
+
+
+.kimono-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.kimono-text {
+    background-color: rgb(255, 254, 249);
+    padding: 25px;
+    width: 960px;
+    box-sizing: border-box;
+    font-size: 28px;
+    margin-right: 20px;
+}
+.food-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;            
+}
 
