@@ -1,0 +1,71 @@
+header{
+    background-color: #F9F4EE;
+}
+
+nav{
+    background-color: #F9F4EE;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: auto;
+    padding: 15px;
+
+}
+
+#japanese-game {
+    background-image: url("photo/back\ ground2.jpg");
+    background-size:cover ;
+
+}
+
+button{
+    background-color: #f9f4ee00;
+    border: none;
+    size: 30px;
+    
+}
+
+.rectangle {
+  height: 640px;
+  width: 1100px;
+  background-color: #fffcf1;
+  border: 1.5px solid #c5af99;
+  border-radius: 30px;
+  margin: 70px auto;
+
+
+}
+
+.options{
+    height: 80px;
+    width: 940px;
+    margin: 15px;
+    margin-left: 70px;
+    border-radius: 70px;
+    background-color: #fef8f1;
+    border: 1.5px solid #c5af99;
+
+}
+
+.options:hover {
+    background-color: #d6c0a9;
+
+}
+
+.options:first-of-type {
+    margin-top: 140px;
+
+}
+
+#next{
+    height: 70px;
+    width: 400px;
+    background-color: hsl(0, 45%, 43%);
+    border-radius: 70px;
+    display: block;
+    margin: 400px auto;
+}
+
+#explanation, #next {
+    display: none;
+}
