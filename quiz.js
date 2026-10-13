@@ -1,33 +1,33 @@
 const quizQuestions = [
     {
         question: "What is Japan's national sport??",
-        options: ["Sumou", "Karate", "k", "d",],
-        answer: "a",
-        explanation: "Sushi is made with vinegared rice, often combined with row fish or vegetables",
+        options: ["Sumou", "Karate", "baceball", "judo",],
+        answer: "Sumou",
+        explanation: "１",
     },
     {
-        question: "Do ninjas actually exist today?",
-        options: ["e", "f", "g", "h",],
-        answer: "h",
-        explanation: "Shinkansen is the Japanese high-speed rail network. Shinkansen is the same meaning as bullet train.",
+        question: "Do ninjas actually exist as a job today?",
+        options: ["Yes", "No", "It still exists in some regions", "I don't know",],
+        answer: "No",
+        explanation: "２",
     },
     {
         question: "Tokyo hasn't always been Japan's capital. So, where was it located in the past?",
-        options: ["i", "j", "k", "l",],
-        answer: "j",
-        explanation: "zz",
+        options: ["Kyoto", "Osaka", "Edo(The old name for Tokyo)", "Toyota",],
+        answer: "Kyoto",
+        explanation: "３",
     },
     {
         question: "What are the roles and powers of the Emperor of Japan?",
-        options: ["m", "n", "o", "p",],
-        answer: "p",
-        explanation: "Nara Park is famous for its deer...",
+        options: ["Enact a law", "At the top level of politics, making decisions such as the national budget.", "Overseas travel and parties.", "Imperial Court rituals, official acts, and acts of state",],
+        answer: "Imperial Court rituals, official acts, and acts of state",
+        explanation: "４",
     },
     {
          question: "How big was sushi about 200 years ago?",
-        options: ["q", "r", "s", "Tt",],
-        answer: "T",
-        explanation: "Taking off your outdoor shoes...",
+        options: ["2 times bigger than now", "same size as now", "more smaller than now", "Sushi didn't exist yet.",],
+        answer: "2 times bigger than now",
+        explanation: "５",
     },
 
     {
@@ -62,10 +62,12 @@ const quizQuestions = [
     }
 ]; 
 
+
 const questionElement = document.querySelector("#question");
 const optionsBTNs = document.querySelectorAll(".options");
 
-let currentQuestions = 0; //count numbers
+let currentQuestions = 0; //count numbers　of questions
+let currrentScore = 0; //count numbers　of how many questions does user correct
 
 function showquestion(){
     questionElement.textContent = quizQuestions[currentQuestions].question;
@@ -94,6 +96,7 @@ showoptions()
     button.addEventListener("click", function(){ 
     if (button.textContent === quizQuestions[currentQuestions].answer){
         currentQuestions = currentQuestions + 1;
+        currrentScore = currrentScore +1;
          showquestion();
          showoptions();
     } else {
@@ -109,6 +112,8 @@ showoptions()
       }
     });
 });
+//if user push button same value as answer in quizQuestions.answer add 1 to questionnumber and correct score number
+//but if not, hide buttons and show explanations and next button to move to next answer
 
 nextBTN.addEventListener("click", function() {
     currentQuestions = currentQuestions + 1;
@@ -123,3 +128,19 @@ nextBTN.addEventListener("click", function() {
     showquestion();
     showoptions();
 });
+
+//if user use this button, hide explanations and next button and back to quiz 
+
+function showresults(){
+    document.querySelector(".rectangle").display = "none";
+    document.querySelectorAll(".options").display = "none";
+    document.querySelector(".explanation").display = "none";
+    document.querySelector(".next").display = "none";
+
+    
+    document.querySelector(".result-screen").display = "block";
+};
+
+if (currentQuestions >= quizQuestions) {
+         showresults();
+    } 

@@ -12,10 +12,15 @@ nav{
 
 }
 
-#japanese-game {
+#japanese-game{
     background-image: url("photo/back\ ground2.jpg");
     background-size:cover ;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+h1{
+     margin: 15% 500px;
 }
 
 button{
@@ -28,7 +33,7 @@ button{
 .rectangle {
   height: 640px;
   width: 1100px;
-  background-color: #fffcf1;
+  background-color: #fffbf6;
   border: 1.5px solid #c5af99;
   border-radius: 30px;
   margin: 70px auto;
@@ -38,7 +43,8 @@ button{
 
 #question{
    display: flex;
-
+   justify-content: center;
+   padding: 50px;
 }
 
 .options{
@@ -54,12 +60,6 @@ button{
 
 .options:hover {
     background-color: #d6c0a9;
-
-}
-
-.options:first-of-type {
-    margin-top: 60px;
-
 }
 
 #next{
@@ -68,9 +68,27 @@ button{
     background-color: hsl(0, 45%, 43%);
     border-radius: 70px;
     display: block;
-    margin: 400px auto;
+    margin: 350px auto;
 }
 
-#explanation, #next {
+.result-screen{
     display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#explanation{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.home-BTN{
+     height: 70px;
+    width: 400px;
+    background-color: hsl(0, 45%, 43%);
+    border-radius: 70px;
+    display: block;
+    margin: 400px auto;
 }

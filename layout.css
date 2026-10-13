@@ -92,10 +92,6 @@ main{
 
 }
 
-#categories{
-    background-image: url("photo/_\ \(31\).jpeg");
-    background-size:cover ;
-}
 
 #categorybackground{
     background-color: hsl(40, 100%, 99%);
