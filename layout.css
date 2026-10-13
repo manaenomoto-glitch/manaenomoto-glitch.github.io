@@ -2,6 +2,16 @@ header{
     background-color: #F9F4EE;
 }
 
+nav{
+    background-color: #F9F4EE;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: auto;
+    padding: 15px;
+
+}
+
 body{
     background-color: #F9F4EE;
     color: #4a3428; 

@@ -36,6 +36,11 @@ button{
 
 }
 
+#question{
+   display: flex;
+
+}
+
 .options{
     height: 80px;
     width: 940px;
@@ -44,7 +49,7 @@ button{
     border-radius: 70px;
     background-color: #fef8f1;
     border: 1.5px solid #c5af99;
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .options:hover {
@@ -53,7 +58,7 @@ button{
 }
 
 .options:first-of-type {
-    margin-top: 140px;
+    margin-top: 60px;
 
 }
 

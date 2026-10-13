@@ -1,7 +1,7 @@
 const quizQuestions = [
     {
         question: "What is Japan's national sport??",
-        options: ["a", "b", "c", "d",],
+        options: ["Sumou", "Karate", "k", "d",],
         answer: "a",
         explanation: "Sushi is made with vinegared rice, often combined with row fish or vegetables",
     },
@@ -15,7 +15,7 @@ const quizQuestions = [
         question: "Tokyo hasn't always been Japan's capital. So, where was it located in the past?",
         options: ["i", "j", "k", "l",],
         answer: "j",
-        explanation: "Hatsumode... (略)",
+        explanation: "zz",
     },
     {
         question: "What are the roles and powers of the Emperor of Japan?",
@@ -32,7 +32,7 @@ const quizQuestions = [
 
     {
         question: "Which of these meats is not eaten raw in Japan?",
-        options: ["u", "v", "w", "x",],
+        options: ["horse", "chicken", "pufferfish", "pork",],
         answer: "x",
         explanation: "Shinkansen is the Japanese high-speed rail network. Shinkansen is the same meaning as bullet train.",
     },
@@ -84,6 +84,8 @@ function showoptions(){
 const explanationElement = document.querySelector("#explanation");
 const nextBTN = document.querySelector("#next");
 
+//get element from explanation[index]
+//if nextBTN pushd move to next question
 
 showquestion()
 showoptions()
