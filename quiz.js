@@ -33,7 +33,7 @@ const quizQuestions = [
     {
         question: "Which of these meats is not eaten raw in Japan?",
         options: ["horse", "chicken", "pufferfish", "pork",],
-        answer: "x",
+        answer: "pork",
         explanation: "Shinkansen is the Japanese high-speed rail network. Shinkansen is the same meaning as bullet train.",
     },
     {
@@ -50,14 +50,14 @@ const quizQuestions = [
     },
     {
         question: "How many prefectures (states) does Japan have?",
-        options: ["5", "6", "7", "8",],
-        answer: "8",
-        explanation: "Nara Park is famous for its deer...",
+        options: ["10", "36", "47", "82",],
+        answer: "47",
+        explanation: "ww",
     },
     {
          question: "What is the design of the Japanese national flag based on?",
-        options: ["1", "2", "3", "4",],
-        answer: "4",
+        options: ["The rising sun", "The blood and purity of warriors who fought for their country", "Pickled plum and white rice", "Shooting target",],
+        answer: "The rising sun",
         explanation: "Taking off your outdoor shoes...",
     }
 ]; 
@@ -70,6 +70,9 @@ let currentQuestions = 0; //count numbers　of questions
 let currrentScore = 0; //count numbers　of how many questions does user correct
 
 function showquestion(){
+     if (currentQuestions >= quizQuestions.length) {
+         showresults();
+         return;}
     questionElement.textContent = quizQuestions[currentQuestions].question;
     
 }
@@ -77,6 +80,9 @@ function showquestion(){
 
 function showoptions(){
     optionsBTNs.forEach(function(button, index){
+        if (currentQuestions >= quizQuestions.length) {
+         showresults();
+         return;}
         button.textContent = quizQuestions[currentQuestions].options[index];
     }
     
@@ -97,6 +103,7 @@ showoptions()
     if (button.textContent === quizQuestions[currentQuestions].answer){
         currentQuestions = currentQuestions + 1;
         currrentScore = currrentScore +1;
+       
          showquestion();
          showoptions();
     } else {
@@ -107,8 +114,8 @@ showoptions()
 
     explanationElement.textContent = quizQuestions[currentQuestions].explanation;
     explanationElement.style.display = "block"; 
+     nextBTN.style.display = "block";
 
-    nextBTN.style.display = "block";
       }
     });
 });
@@ -116,6 +123,9 @@ showoptions()
 //but if not, hide buttons and show explanations and next button to move to next answer
 
 nextBTN.addEventListener("click", function() {
+    if (currentQuestions >= quizQuestions.length) {
+         showresults();
+         return;}
     currentQuestions = currentQuestions + 1;
 
     optionsBTNs.forEach(function(btn) {
@@ -132,15 +142,17 @@ nextBTN.addEventListener("click", function() {
 //if user use this button, hide explanations and next button and back to quiz 
 
 function showresults(){
-    document.querySelector(".rectangle").display = "none";
-    document.querySelectorAll(".options").display = "none";
-    document.querySelector(".explanation").display = "none";
-    document.querySelector(".next").display = "none";
+    optionsBTNs.forEach(function(btn){
+        btn.style.display = "none";
+    });
+
+   explanationElement.style.display = "none"; 
+   nextBTN.style.display = "none";      
+   questionElement.style.display = "none"      
 
     
-    document.querySelector(".result-screen").display = "block";
+    document.querySelector(".result-screen").style.display = "block";
+    document.querySelector("#score-box").style.display = "block";
+    document.querySelector("#score-comment").style.display = "block";
 };
 
-if (currentQuestions >= quizQuestions) {
-         showresults();
-    } 

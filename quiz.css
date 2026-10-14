@@ -15,8 +15,7 @@ nav{
 #japanese-game{
     background-image: url("photo/back\ ground2.jpg");
     background-size:cover ;
-    background-position: center;
-    background-attachment: fixed;
+    
 }
 
 h1{
@@ -67,14 +66,8 @@ button{
     width: 400px;
     background-color: hsl(0, 45%, 43%);
     border-radius: 70px;
-    display: block;
-    margin: 350px auto;
-}
-
-.result-screen{
     display: none;
-    text-align: center;
-    margin-top: 50px;
+    margin: 350px auto;
 }
 
 #explanation{
@@ -83,6 +76,11 @@ button{
      align-items: center;
 }
 
+.result-screen{
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
 
 .home-BTN{
      height: 70px;
