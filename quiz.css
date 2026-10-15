@@ -1,20 +1,54 @@
 header{
-    background-color: #F9F4EE;
+    padding: -10px;
+    background-color: #b2876a;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: auto;
+    padding: 15px; 
 }
 
 nav{
-    background-color: #F9F4EE;
+    padding: 0px;
+    background-color: #b2876a;
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
     width: auto;
-    padding: 15px;
-
+    padding: 15px; 
 }
 
 #japanese-game{
     background-image: url("photo/back\ ground2.jpg");
     background-size:cover ;
+    
+}
+
+
+#nav-items{
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #6a4a3a;
+    background-color: #fef7f1;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px #e6ccb2;
+    transition: all 0.2s ease;
+    justify-content: right;
+}
+
+#nav-items:hover {
+    background-color: #be876e;
+    color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #e6ccb2;
+}
+
+
+a {
+    color: #4A3428;
+    text-decoration: none;
     
 }
 
@@ -67,13 +101,26 @@ button{
     background-color: hsl(0, 45%, 43%);
     border-radius: 70px;
     display: none;
-    margin: 350px auto;
+    margin: 200px auto;
+    font-size: 15px;
+    color: #efeae8;
+    transition: all 0.2s ease;
+    justify-content: right;
 }
 
+#next:hover {
+    background-color: #be876e;
+    color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #e6ccb2;
+}
+
+
 #explanation{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+     font-size: 30px;
 }
 
 .result-screen{
@@ -82,11 +129,14 @@ button{
     margin-top: 50px;
 }
 
-.home-BTN{
-     height: 70px;
+#home-BTN{
+    height: 70px;
     width: 400px;
     background-color: hsl(0, 45%, 43%);
     border-radius: 70px;
     display: block;
-    margin: 400px auto;
+    margin: 260px auto;
+    font-size: 15px;
+  font-weight: bold;
 }
+

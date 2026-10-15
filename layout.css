@@ -1,16 +1,18 @@
-header{
-    background-color: #F9F4EE;
-}
+
 
 nav{
-    background-color: #F9F4EE;
+    padding: 0px;
+    background-color: #b2876a;
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
     width: auto;
-    padding: 15px;
-    
+    padding: 15px; 
+}
 
+#home-screen{
+     background-image: url("photo/Download\ Japanese\ Background\ with\ Flower\,\ Wave\,\ Cloud\ and\ Abstract\ Elements\ for\ free.jpeg");
+     background-size: cover; 
 }
 
 body{
@@ -26,6 +28,28 @@ h1{
 
 }
 
+#nav-items{
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #6a4a3a;
+    background-color: #fef7f1;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px #e6ccb2;
+    transition: all 0.2s ease;
+    justify-content: right;
+}
+
+#nav-items:hover {
+    background-color: #be876e;
+    color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #e6ccb2;
+}
+
+
 a {
     color: #4A3428;
     text-decoration: none;
@@ -39,22 +63,94 @@ p{
 }
 
 #start-quiz{
-    background-color: hsl(0, 45%, 43%);
+    background-color: hsl(349, 73%, 46%);
     color: #F9F4EE;
-    padding: 30px 70px;
-    border-radius: 50px;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
     border: none;
     font-size: 20px;
     display: block;
-    margin: auto;
+    margin: 15px auto; 
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    justify-content: right;
     
 }
 
-button{
+#start-quiz:hover{
+    background-color: #bc002d;
+    color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #e6ccb2;
+}
+
+#button{
     background-color: #f9f4ee00;
     border: none;
     size: 30px;
     
+}
+
+#return-btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a4a3a;
+    background-color: hsl(7, 35%, 43%);
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px #e6b5b2;
+    
+}
+
+#return-btnhover {
+    background-color: #f2c5b0;
+    color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #e6ccb2;
+}
+
+#how-to-play{
+    background-image: url("photo/category\ back\ ground.jpeg");
+    background-size: cover;    
+    transform: translateY(-2px);
+    transition: all 0.3s ease; 
+}
+
+#how-to-play-nav{
+    background-color:rgb(182, 156, 140) ;
+}
+
+.rectangle {
+    height: 640px;
+    width: 1100px;
+    background-color: #fffbf6;
+    border: 1.5px solid #c5af99;
+    border-radius: 30px;
+    margin: 70px auto;
+}
+
+#return-btn{
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #6a4a3a;
+    background-color: #fef7f1;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px #e6ccb2;
+    transition: all 0.2s ease;
+    justify-content: right;
+}
+
+#return-btn:hover {
+    background-color: #be876e;
+    color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #e6ccb2;
 }
 
 #food{
@@ -93,12 +189,6 @@ main{
 
 }
 
-
-#categorybackground{
-    background-color: hsl(40, 100%, 99%);
-}
-
-
 .kimono-container {
     display: flex;
     align-items: flex-start;
@@ -115,20 +205,23 @@ main{
     margin-right: 20px;
 }
 .food-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.food {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;            
-}
-
-.wagashi{
     display: flex;
-  flex-direction: column;
-  gap: 20px;            
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+.food-text{
+    background-color: rgb(255, 254, 249);
+    padding: 25px;
+    width: 1200px;
+    box-sizing: border-box;
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+
+
+#categories{
+    background-image: url("photo/category\ background.jpeg");
+    background-size: cover; 
 }
