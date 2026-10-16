@@ -71,7 +71,7 @@ p{
     border: none;
     font-size: 20px;
     display: block;
-    margin: 15px auto; 
+    margin: 10px auto; 
     text-align: center;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -224,4 +224,18 @@ main{
 #categories{
     background-image: url("photo/category\ background.jpeg");
     background-size: cover; 
+}
+
+#top-h3
+{
+      margin-top: 10px;
+      font-size: 30;
+}
+
+
+h3{
+      font-size: 20px;
+      padding: 25px;
+      margin-top: -30px;
+    
 }
