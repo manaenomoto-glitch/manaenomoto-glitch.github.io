@@ -169,10 +169,25 @@ p{
     height: 660px;
     width: 360px;
 }
+
 #photo{
     padding-top: 40px;
     gap: 20px;
 }
+
+#food:hover{
+    transform: translateY(10px);
+}
+
+#history:hover{
+    transform: translateY(10px);
+}
+
+#clothes:hover{
+    transform: translateY(10px);
+} 
+
+
 section{
     gap: 300px;
     width: auto;
