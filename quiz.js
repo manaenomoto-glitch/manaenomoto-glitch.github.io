@@ -62,12 +62,12 @@ const quizQuestions = [
     }
 ]; 
 
+const correctaudio = document.getElementById("correct-sounds");
+const wrongaudio = document.getElementById("sounds-wrong");
+
 
 const questionElement = document.querySelector("#question");
 const optionsBTNs = document.querySelectorAll(".options");
-
-const Correctaudio = new Audio("sound/correct sound.mp3");
-const Wrongaudio = new Audio("sound/wrong sound.mp3");
 
 let currentQuestions = 0; //count numbers　of questions
 let currentScore = 0; //count numbers　of how many questions does user correct
@@ -94,6 +94,10 @@ function showoptions(){
 )};
 //make function of answer that move to next question 
 
+
+
+//add sound!
+
 const explanationElement = document.querySelector("#explanation");
 const nextBTN = document.querySelector("#next");
 
@@ -106,15 +110,19 @@ showoptions()
  optionsBTNs.forEach(function(button, index){
     button.addEventListener("click", function(){ 
     if (button.textContent === quizQuestions[currentQuestions].answer){
-    //I wanna add audio in this line
+        correctaudio.currentTime = 0;
+        correctaudio.play().catch(error => console.log(error));
+
         currentQuestions = currentQuestions + 1;
         currentScore = currentScore +1;
        
          showquestion();
          showoptions();
     } else {
-   //I wanna add audio in this line
-    optionsBTNs.forEach(function(button) {
+     wrongaudio.currentTime = 0;
+     wrongaudio.play().catch(error => console.log(error));
+
+     optionsBTNs.forEach(function(button) {
         button.style.display = "none";
     });
 

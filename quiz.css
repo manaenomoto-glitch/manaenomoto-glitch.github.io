@@ -88,11 +88,15 @@ button{
     border-radius: 70px;
     background-color: #fef8f1;
     border: 1.5px solid #c5af99;
+    box-shadow: 0 5px #e6ccb2;
+    
+    justify-content: right;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .options:hover {
     background-color: #d6c0a9;
+    transform: translateY(2px);
 }
 
 #next{
