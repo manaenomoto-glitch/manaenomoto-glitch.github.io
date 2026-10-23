@@ -121,7 +121,7 @@ button{
 
 
 #explanation{
-    display: flex;
+    display: none;
     justify-content: center;
     padding: 20px;
      font-size: 30px;
