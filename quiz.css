@@ -1,5 +1,4 @@
 header{
-    padding: -10px;
     background-color: #b2876a;
     flex-direction: row-reverse;
     gap: 20px;
@@ -53,13 +52,14 @@ a {
 }
 
 h1{
-     margin: 15% 500px;
+    font-size:30px;
+    padding-top: 30px;
 }
 
 button{
     background-color: #f9f4ee00;
     border: none;
-    size: 30px;
+
     
 }
 
@@ -70,7 +70,7 @@ button{
   border: 1.5px solid #c5af99;
   border-radius: 30px;
   margin: 70px auto;
-
+  padding-top: 10px ;
 
 }
 

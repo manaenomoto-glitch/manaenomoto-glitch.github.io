@@ -40,6 +40,7 @@ h1{
     box-shadow: 0 4px #e6ccb2;
     transition: all 0.2s ease;
     justify-content: right;
+     text-align: center;
 }
 
 .nav-items:hover {
@@ -70,12 +71,13 @@ p{
     border-radius: 50%;
     border: none;
     font-size: 20px;
-    display: block;
+   display: flex;
+   align-items: center;
     margin: 10px auto; 
     text-align: center;
     text-decoration: none;
     transition: all 0.2s ease;
-    justify-content: right;
+    justify-content: center;
     
 }
 
@@ -84,13 +86,14 @@ p{
     color: #ffffff;
     transform: translateY(2px);
     box-shadow: 0 2px 0 #e6ccb2;
+
 }
 
 #button{
     background-color: #f9f4ee00;
     border: none;
-    size: 30px;
-    
+    width: 30px;
+    height: 30px;
 }
 
 
