@@ -17,6 +17,12 @@
             "name": "http://127.0.0.1:3000/categories.html",
             "request": "launch",
             "url": "http://127.0.0.1:3000/categories.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/clothesinformation.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/clothesinformation.html"
         }
     ]
 }

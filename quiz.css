@@ -24,7 +24,7 @@ nav{
 }
 
 
-#nav-items{
+.nav-items{
     display: inline-block;
     padding: 8px 16px;
     font-size: 15px;
@@ -38,7 +38,7 @@ nav{
     justify-content: right;
 }
 
-#nav-items:hover {
+.nav-items:hover {
     background-color: #be876e;
     color: #ffffff;
     transform: translateY(2px);

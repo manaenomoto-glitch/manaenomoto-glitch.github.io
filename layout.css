@@ -25,10 +25,10 @@ h1{
     color: #4A3428;
     display: flex;
     justify-content: center;
-
+    font-size:170%;
 }
 
-#nav-items{
+.nav-items{
     display: inline-block;
     padding: 8px 16px;
     font-size: 15px;
@@ -42,7 +42,7 @@ h1{
     justify-content: right;
 }
 
-#nav-items:hover {
+.nav-items:hover {
     background-color: #be876e;
     color: #ffffff;
     transform: translateY(2px);
@@ -93,6 +93,28 @@ p{
     
 }
 
+
+#start{
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #6a4a3a;
+    background-color: #fef7f1;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px #e6ccb2;
+    transition: all 0.2s ease;
+    justify-content: right;
+}
+
+#start:hover {
+    background-color: #f2c5b0;
+    color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #e6ccb2;
+}
+
 #return-btn{
     padding: 10px 20px;
     font-size: 20px;
@@ -105,7 +127,7 @@ p{
     
 }
 
-#return-btnhover {
+#return-btn:hover {
     background-color: #f2c5b0;
     color: #ffffff;
     transform: translateY(2px);
@@ -172,7 +194,9 @@ p{
 
 #photo{
     padding-top: 40px;
-    gap: 20px;
+    display:flex;
+    margin-left: 100px;
+    gap:50px;
 }
 
 #food:hover{
@@ -241,16 +265,33 @@ main{
     background-size: cover; 
 }
 
-#top-h3
+#top-h1
 {
-      margin-top: 10px;
-      font-size: 30;
+    margin-top: 10px;
+    font-size:40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
 }
 
+#top-h2{
+    font-size:30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+.how-play{
+    font-size:25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
 
-h3{
-      font-size: 20px;
-      padding: 25px;
-      margin-top: -30px;
+#after{
+    font-size:25px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right:50px;
     
 }
